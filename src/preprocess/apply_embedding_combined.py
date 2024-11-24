@@ -5,6 +5,7 @@ Apply Embedding for Combined DataFrame.
 import os
 import sys
 import pandas as pd
+import numpy as np
 from abc import ABC, abstractmethod
 from sentence_transformers import SentenceTransformer
 
@@ -24,7 +25,7 @@ class IEmbeddingForCombined(ABC):
     @abstractmethod
     def embedded(
         self, embedding_model: SentenceTransformer, df: pd.DataFrame, column: str
-    ) -> pd.DataFrame:
+    ) -> np.ndarray:
         """
         Abstract method to apply embeddings to a specified column.
 
@@ -34,7 +35,7 @@ class IEmbeddingForCombined(ABC):
             column (str): Name of the column to apply embeddings to.
 
         Returns:
-            pd.DataFrame: DataFrame with the embeddings applied to the specified column.
+            np.ndarray: NumPy array with array embeddings.
 
         Raises:
             ValueError: If inputs are not of the expected type or column does not exist in the DataFrame.
@@ -49,7 +50,7 @@ class EmbeddingForCombined(IEmbeddingForCombined):
 
     def embedded(
         self, embedding_model: SentenceTransformer, df: pd.DataFrame, column: str
-    ) -> pd.DataFrame:
+    ) -> np.ndarray:
         """
         Applies embeddings to a specified column in the DataFrame.
 
@@ -59,7 +60,7 @@ class EmbeddingForCombined(IEmbeddingForCombined):
             column (str): Name of the column to apply embeddings to.
 
         Returns:
-            pd.DataFrame: DataFrame with a new column '{column}_embedding' containing the embeddings.
+            np.ndarray: NumPy array with array embeddings.
 
         Raises:
             ValueError: If inputs are not valid or if column does not exist in the DataFrame.
@@ -94,13 +95,21 @@ class EmbeddingForCombined(IEmbeddingForCombined):
                 lambda x: embedding_model.encode(x)
             )
             pipeline_log.info(f"Successfully generated embeddings for column: {column}")
+
+            # Collect all embeddings into a list
+            embeddings_list = df[f"{column}_embedding"].tolist()
+
+            # Stack the embeddings into a NumPy array
+            embeddings_array = np.vstack(embeddings_list)
+            pipeline_log.info("Successfully converted embeddings to a NumPy array.")
+
         except Exception as e:
             error_msg = f"An error occurred while generating embeddings: {e}"
             error_log.error(error_msg)
             raise RuntimeError(error_msg)
 
-        # Return the DataFrame with the new embeddings column
-        return df
+        # Return the NumPy array of embeddings
+        return embeddings_array
 
 
 # Example usage
@@ -122,7 +131,7 @@ if __name__ == "__main__":
     embedder = EmbeddingForCombined()
 
     # Apply embeddings to the 'combined' column
-    result_df = embedder.embedded(embedding_model, df, "combined")
+    result = embedder.embedded(embedding_model, df, "combined")
 
-    # Print the resulting DataFrame
-    print(result_df.head())
+    # Print the resulting NumPy array shape
+    print(result.shape)
