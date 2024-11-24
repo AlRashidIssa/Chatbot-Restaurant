@@ -34,3 +34,4 @@ def setup_logger(name, log_file, level=logging.INFO):
 
 error_log = setup_logger(name="error_log", log_file=os.path.join(LOG_DIR, "error.log"), level=logging.ERROR)
 chatbot_log = setup_logger(name="chatbot_log", log_file=os.path.join(LOG_DIR, "chatbot.log"), level=logging.INFO)
+pipeline_log = setup_logger(name="infenrece_log", log_file=os.path.join(LOG_DIR, "infenrece_log.log"), level=logging.INFO)
