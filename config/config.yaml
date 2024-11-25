@@ -19,11 +19,11 @@ retrieval:
 
 # Generative Model Configuration
 generative_model:
-  max_length: 250
+  max_length: 200
   do_sample: True
-  temperature: 0.7
-  top_k: 50
-  top_p: 0.95
+  temperature: 0.99
+  top_k: 60
+  top_p: 0.99
 
 # API Configuration
 api:
