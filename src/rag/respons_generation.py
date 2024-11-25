@@ -5,8 +5,7 @@ Generate Responses using a Hugging Face Seq2Seq Model.
 import os
 import sys
 from abc import ABC, abstractmethod
-from typing import Dict, Any, List, Optional
-from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
+from typing import Dict, Any, List
 
 # Get the absolute path to the directory one level above the current file's directory
 MAIN_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../"))
@@ -26,8 +25,7 @@ class IGenerateResponse(ABC):
         self,
         query: str,
         retriever: Dict[str, Any],
-        generate_model: AutoModelForSeq2SeqLM,
-        tokenizer: AutoTokenizer,
+        generate_model,
         max_length: int = 250,
         do_sample: bool = True,
         temperature: float = 0.5,
@@ -40,8 +38,7 @@ class IGenerateResponse(ABC):
         Args:
             query (str): User query.
             retriever (Dict[str, Any]): Retrieved context from FAISS or other retrieval mechanism.
-            generate_model (AutoModelForSeq2SeqLM): Pretrained Hugging Face model for text generation.
-            tokenizer (AutoTokenizer): Tokenizer for the model.
+            generate_model (): Pretrained Hugging Face model for text generation.
             max_length (int): Maximum length of the generated response. Default is 250.
             do_sample (bool): Whether to sample tokens during generation. Default is True.
             temperature (float): Sampling temperature. Default is 0.5.
@@ -66,8 +63,7 @@ class GenerateResponse(IGenerateResponse):
         self,
         query: str,
         retriever: Dict[str, Any],
-        generate_model: AutoModelForSeq2SeqLM,
-        tokenizer: AutoTokenizer,
+        generate_model,
         max_length: int = 250,
         do_sample: bool = True,
         temperature: float = 0.5,
@@ -80,8 +76,7 @@ class GenerateResponse(IGenerateResponse):
         Args:
             query (str): User query.
             retriever (Dict[str, Any]): Retrieved context from FAISS or other retrieval mechanism.
-            generate_model (AutoModelForSeq2SeqLM): Pretrained Hugging Face model for text generation.
-            tokenizer (AutoTokenizer): Tokenizer for the model.
+            generate_model (): Pretrained Hugging Face model for text generation.
             max_length (int): Maximum length of the generated response. Default is 250.
             do_sample (bool): Whether to sample tokens during generation. Default is True.
             temperature (float): Sampling temperature. Default is 0.5.
@@ -102,51 +97,31 @@ class GenerateResponse(IGenerateResponse):
             error_log.error(error_msg)
             raise ValueError(error_msg)
 
-        if not isinstance(generate_model, AutoModelForSeq2SeqLM):
-            error_msg = "The 'generate_model' must be an instance of AutoModelForSeq2SeqLM."
-            error_log.error(error_msg)
-            raise ValueError(error_msg)
-
-        if not isinstance(tokenizer, AutoTokenizer):
-            error_msg = "The 'tokenizer' must be an instance of AutoTokenizer."
-            error_log.error(error_msg)
-            raise ValueError(error_msg)
-
         # Start generating context
         pipeline_log.info("Generating context for the model.")
-        context = (
-            "You are a helpful assistant for a restaurant in Saudi Arabia. "
-            "Answer the question based on the provided context:\n\n"
-        )
+        faq_results = retriever['_1_result']
+        menu_results = retriever['_2_result']
+        # Step 3: Prepare Context for Generation
+        context = "You are a helpful assistant for a restaurant in Saudi Arabia. Answer the question based on the provided context.:\n\n"
 
-        # Add FAQ context if available
-        faq_results = retriever.get("_1_result", [])
-        if faq_results:
-            context += "FAQs:\n"
-            for faq in faq_results:
-                context += f"- Q: {faq['question']} A: {faq['answer']}\n"
+        # Add FAQ context if the query is FAQ-related
+        context += "FAQs:\n"
+        for faq in faq_results:
+            context += f"- Q: {faq['question']} A: {faq['answer']}\n"
 
-        # Add menu context if available
-        menu_results = retriever.get("_2_result", [])
-        if menu_results:
-            context += "\nMenu Items:\n"
-            for item in menu_results:
-                context += (
-                    f"- {item['name']}: {item['description']} "
-                    f"(Ingredients: {item['ingredients']}, Allergens: {item['allergens']})\n"
-                )
+        context += "\nMenu Items:\n"
+        for item in menu_results:
+            context += f"- {item['name']}: {item['description']} (Ingredients: {item['ingredients']}, Allergens: {item['allergens']})\n"
 
         # Ensure the user query is included in the prompt
         context += f"\nUser Query: {query}\n\n"
-
         pipeline_log.info("Context generated successfully.")
         pipeline_log.debug(f"Generated context: {context}")
 
         try:
             # Generate response
-            input_ids = tokenizer.encode(context, return_tensors="pt", truncation=True)
-            outputs = generate_model.generate(
-                input_ids,
+            response = generate_model(
+                context,
                 max_length=max_length,
                 do_sample=do_sample,
                 temperature=temperature,
@@ -154,11 +129,9 @@ class GenerateResponse(IGenerateResponse):
                 top_k=top_k,
                 num_return_sequences=1,
             )
-            response = tokenizer.decode(outputs[0], skip_special_tokens=True)
 
             pipeline_log.info("Response generated successfully.")
-            return response
-
+            return response[0]['generated_text']
         except Exception as e:
             error_msg = f"An error occurred during response generation: {e}"
             error_log.error(error_msg)
