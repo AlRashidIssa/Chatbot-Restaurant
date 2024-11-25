@@ -31,8 +31,8 @@ class IRetrieve(ABC):
         embedding_model: SentenceTransformer,
         index_1: faiss.IndexFlatL2,
         index_2: faiss.IndexFlatL2,
-        _1_df: pd.DataFrame,
-        _2_df: pd.DataFrame,
+        df_index_1: pd.DataFrame,
+        df_index_2: pd.DataFrame,
         top_k: int = 3,
     ) -> Dict[str, Any]:
         """
@@ -43,8 +43,8 @@ class IRetrieve(ABC):
             embedding_model (SentenceTransformer): Pretrained embedding model.
             index_1 (faiss.IndexFlatL2): First FAISS index for retrieval.
             index_2 (faiss.IndexFlatL2): Second FAISS index for retrieval.
-            _1_df (pd.DataFrame): DataFrame corresponding to the first FAISS index.
-            _2_df (pd.DataFrame): DataFrame corresponding to the second FAISS index.
+            df_index_1 (pd.DataFrame): DataFrame corresponding to the first FAISS index.
+            df_index_2 (pd.DataFrame): DataFrame corresponding to the second FAISS index.
             top_k (int): Number of top results to retrieve from each index. Default is 3.
 
         Returns:
@@ -67,8 +67,8 @@ class Retrieve(IRetrieve):
         embedding_model: SentenceTransformer,
         index_1: faiss.IndexFlatL2,
         index_2: faiss.IndexFlatL2,
-        _1_df: pd.DataFrame,
-        _2_df: pd.DataFrame,
+        df_index_1: pd.DataFrame,
+        df_index_2: pd.DataFrame,
         top_k: int = 3,
     ) -> Dict[str, Any]:
         """
@@ -79,8 +79,8 @@ class Retrieve(IRetrieve):
             embedding_model (SentenceTransformer): Pretrained embedding model.
             index_1 (faiss.IndexFlatL2): First FAISS index for retrieval.
             index_2 (faiss.IndexFlatL2): Second FAISS index for retrieval.
-            _1_df (pd.DataFrame): DataFrame corresponding to the first FAISS index.
-            _2_df (pd.DataFrame): DataFrame corresponding to the second FAISS index.
+            df_index_1 (pd.DataFrame): DataFrame corresponding to the first FAISS index.
+            df_index_2 (pd.DataFrame): DataFrame corresponding to the second FAISS index.
             top_k (int): Number of top results to retrieve from each index. Default is 3.
 
         Returns:
@@ -105,8 +105,8 @@ class Retrieve(IRetrieve):
             error_log.error(error_msg)
             raise ValueError(error_msg)
 
-        if not isinstance(_1_df, pd.DataFrame) or not isinstance(_2_df, pd.DataFrame):
-            error_msg = "The '_1_df' and '_2_df' must be pandas DataFrames."
+        if not isinstance(df_index_1, pd.DataFrame) or not isinstance(df_index_2, pd.DataFrame):
+            error_msg = "The 'df_index_1' and 'df_index_2' must be pandas DataFrames."
             error_log.error(error_msg)
             raise ValueError(error_msg)
 
@@ -124,12 +124,12 @@ class Retrieve(IRetrieve):
 
             # Retrieve from index_1
             index_1_distances, index_1_indices = index_1.search(query_embedding, top_k)
-            index_1_results = _1_df.iloc[index_1_indices[0]].to_dict(orient="records")
+            index_1_results = df_index_1.iloc[index_1_indices[0]].to_dict(orient="records")
             pipeline_log.info(f"Top {top_k} results retrieved from index_1.")
 
             # Retrieve from index_2
             index_2_distances, index_2_indices = index_2.search(query_embedding, top_k)
-            index_2_results = _2_df.iloc[index_2_indices[0]].to_dict(orient="records")
+            index_2_results = df_index_2.iloc[index_2_indices[0]].to_dict(orient="records")
             pipeline_log.info(f"Top {top_k} results retrieved from index_2.")
 
             # Combine results into a dictionary
@@ -180,8 +180,8 @@ if __name__ == "__main__":
             embedding_model=embedding_model,
             index_1=index_1,
             index_2=index_2,
-            _1_df=example_df_1,
-            _2_df=example_df_2,
+            df_index_1=example_df_1,
+            df_index_2=example_df_2,
             top_k=5,
         )
         print("Results:", results)
