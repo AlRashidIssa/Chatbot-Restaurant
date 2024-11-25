@@ -49,7 +49,7 @@ class EmbeddingForCombined(IEmbeddingForCombined):
     """
 
     def embedded(
-        self, embedding_model: SentenceTransformer, df: pd.DataFrame, column: str
+        self, embedding_model: SentenceTransformer, df: pd.DataFrame, column: str = "combined"
     ) -> np.ndarray:
         """
         Applies embeddings to a specified column in the DataFrame.
