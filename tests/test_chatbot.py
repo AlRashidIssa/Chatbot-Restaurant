@@ -4,16 +4,14 @@ from fastapi.testclient import TestClient
 import time
 from pathlib import Path
 
-# Get the current directory 
-current_dir = Path(__file__).resolve()
-
-# Search for the main directory
+# Dynamically locate the main project directory
+current_dir = Path(__file__).resolve().parent
 MAIN_DIR = current_dir
 while MAIN_DIR.name != "Chatbot-Restaurant":
     MAIN_DIR = MAIN_DIR.parent
 
-# Add your project directory to sys.path
-sys.path.append(MAIN_DIR)
+# Add the `src` directory to sys.path
+sys.path.append(str(MAIN_DIR))
 
 # Assuming app is your FastAPI instance
 from src.api.app import app  
