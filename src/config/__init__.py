@@ -25,11 +25,11 @@ def config_yaml_reader(file_path: Optional[str] = None) -> Dict[str, Any]:
     """
     try:
         # If not, look for any YAML file in the specified directory
-        config_files = os.listdir("/workspaces/Chatbot-Restaurant/config")
+        config_files = os.listdir("/workspaces/Chatbot-Restaurant/configs")
         for con in config_files:
             if con.endswith(".yaml"):
                 # Set the first YAML file found as the configuration file
-                file_path = os.path.join("/workspaces/Chatbot-Restaurant/config", con)
+                file_path = os.path.join("/workspaces/Chatbot-Restaurant/configs", con)
                 pipeline_log.info(f"Using alternative configuration file: {file_path}")
                 break
             else:
