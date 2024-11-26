@@ -1,24 +1,25 @@
 import os
 from fastapi import FastAPI, Request, Form
-from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from fastapi.responses import HTMLResponse
 import sys
 import time
 
 # Add your project directory to sys.path
-sys.path.append("/workspaces/Chatbot-Restaurant/")
+# Get the absolute path to the directory one level above the current file's directory
+MAIN_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../"))
+sys.path.append(MAIN_DIR)
 
-from src.utils import chatbot_log, error_log
-from src.utils.ingest_query_database import IngestQueryDatabase
-from src.preprocess.combined_tables import CombinedTables
-from src.preprocess.apply_embedding_combined import EmbeddingForCombined
-from src.preprocess.faiss_index import FAISSIndex
-from src.models.embedding_model_all_miniLM_L6_v2 import EmbeddingLoader
-from src.models.huggneface_model_flanT5 import FlanT5Load
-from src.rag.retrieval import Retrieve
-from src.rag.respons_generation import GenerateResponse
-from src.config import Config
+from utils import chatbot_log, error_log
+from utils.ingest_query_database import IngestQueryDatabase
+from preprocess.combined_tables import CombinedTables
+from preprocess.apply_embedding_combined import EmbeddingForCombined
+from preprocess.faiss_index import FAISSIndex
+from models.embedding_model_all_miniLM_L6_v2 import EmbeddingLoader
+from models.huggneface_model_flanT5 import FlanT5Load
+from rag.retrieval import Retrieve
+from rag.respons_generation import GenerateResponse
+from config import Config
 
 
 # Load Models and Configurations
