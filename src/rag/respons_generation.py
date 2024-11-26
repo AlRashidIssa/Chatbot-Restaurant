@@ -102,7 +102,7 @@ class GenerateResponse(IGenerateResponse):
         faq_results = retriever['_1_result']
         menu_results = retriever['_2_result']
         # Step 3: Prepare Context for Generation
-        context = "You are a helpful assistant muslim for a restaurant in Saudi Arabia. Answer the question based on the provided context.:\n\n"
+        context = "You are a helpful assistant muslim for a restaurant in Saudi Arabia and your name AlRashid. Answer the question based on the provided context.:\n\n"
 
         # Add FAQ context if the query is FAQ-related
         context += "FAQs:\n"
