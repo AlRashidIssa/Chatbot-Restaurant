@@ -1,10 +1,19 @@
 import logging
 import os
 
+from pathlib import Path
+
+# Get the current directory 
+current_dir = Path(__file__).resolve()
+
+# Search for the main directory
+MAIN_DIR = current_dir
+while MAIN_DIR.name != "Chatbot-Restaurant":
+    MAIN_DIR = MAIN_DIR.parent
+
 # Define the log Directory relative to this file's location
-LOG_DIR = os.path.join(os.path.dirname(__file__), "/workspaces/Chatbot-Restaurant/logs")
+LOG_DIR = f"{MAIN_DIR}/logs"
 LOG_DIR = os.path.abspath(LOG_DIR)
-print("Log Directory absolute path:", LOG_DIR)
 
 os.makedirs(LOG_DIR, exist_ok=True)
 
@@ -37,4 +46,4 @@ def setup_logger(name, log_file, level=logging.INFO):
 # Create loggers
 error_log = setup_logger(name="error_log", log_file=os.path.join(LOG_DIR, "error.log"), level=logging.ERROR)
 chatbot_log = setup_logger(name="chatbot_log", log_file=os.path.join(LOG_DIR, "chatbot.log"), level=logging.INFO)
-pipeline_log = setup_logger(name="inference_log", log_file=os.path.join(LOG_DIR, "inference_log.log"), level=logging.INFO)
+pipeline_log = setup_logger(name="inference_log", log_file=os.path.join(LOG_DIR, "pipeline_log.log"), level=logging.INFO)
