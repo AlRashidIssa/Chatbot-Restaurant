@@ -1,5 +1,2 @@
 .Env
 __pycache__
-/workspaces/Chatbot-Restaurant/logs/
-logs
-*.log
