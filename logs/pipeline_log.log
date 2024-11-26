@@ -193,3 +193,13 @@
 2024-11-26 17:31:51,156 - inference_log - INFO - Successfully generated embeddings for column: combined
 2024-11-26 17:31:51,157 - inference_log - INFO - Successfully converted embeddings to a NumPy array.
 2024-11-26 17:31:51,157 - inference_log - INFO - Starting embedding for column: combined
+2024-11-26 17:33:10,877 - inference_log - INFO - Successfully generated embeddings for column: combined
+2024-11-26 17:33:10,883 - inference_log - INFO - Successfully converted embeddings to a NumPy array.
+2024-11-26 17:33:10,883 - inference_log - INFO - Starting FAISS index creation. Embedding array shape: (111, 384)
+2024-11-26 17:33:10,884 - inference_log - INFO - FAISS index created successfully.
+2024-11-26 17:33:10,886 - inference_log - INFO - Embeddings added to the FAISS index successfully.
+2024-11-26 17:33:10,886 - inference_log - INFO - FAISS index creation completed successfully.
+2024-11-26 17:33:10,886 - inference_log - INFO - Starting FAISS index creation. Embedding array shape: (944, 384)
+2024-11-26 17:33:10,886 - inference_log - INFO - FAISS index created successfully.
+2024-11-26 17:33:10,888 - inference_log - INFO - Embeddings added to the FAISS index successfully.
+2024-11-26 17:33:10,894 - inference_log - INFO - FAISS index creation completed successfully.
