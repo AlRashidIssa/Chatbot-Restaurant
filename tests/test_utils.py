@@ -5,7 +5,19 @@ from unittest import mock
 from src.utils import chatbot_log
 import sqlite3
 import pandas as pd
-sys.path.append("/workspaces/Chatbot-Restaurant/")
+from pathlib import Path
+
+# Get the current directory 
+current_dir = Path(__file__).resolve()
+
+# Search for the main directory
+MAIN_DIR = current_dir
+while MAIN_DIR.name != "Chatbot-Restaurant":
+    MAIN_DIR = MAIN_DIR.parent
+
+# Add your project directory to sys.path
+sys.path.append(MAIN_DIR)
+
 # Test for logging
 def test_logging_setup():
     """Test if the logger is configured properly."""

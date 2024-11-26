@@ -2,7 +2,18 @@ import sys
 import pytest
 from fastapi.testclient import TestClient
 import time
-sys.path.append("/workspaces/Chatbot-Restaurant/")
+from pathlib import Path
+
+# Get the current directory 
+current_dir = Path(__file__).resolve()
+
+# Search for the main directory
+MAIN_DIR = current_dir
+while MAIN_DIR.name != "Chatbot-Restaurant":
+    MAIN_DIR = MAIN_DIR.parent
+
+# Add your project directory to sys.path
+sys.path.append(MAIN_DIR)
 
 # Assuming app is your FastAPI instance
 from src.api.app import app  
