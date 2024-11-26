@@ -76,8 +76,7 @@ def main(query: str) -> str:
 app = FastAPI()
 
 # Mount the static folder (assuming your static files are under 'static/')
-app.mount("/static", StaticFiles(directory="static"), name="static")
-templates = Jinja2Templates(directory="templates")
+templates = Jinja2Templates(directory="/workspaces/Chatbot-Restaurant/src/api/templates")
 
 @app.get("/", response_class=HTMLResponse)
 async def get_form(request: Request):
