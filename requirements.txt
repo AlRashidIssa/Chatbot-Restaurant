@@ -78,3 +78,6 @@ fastapi
 uvicorn 
 twilio 
 pydantic
+pytest
+httpx
+pytest-asyncio
