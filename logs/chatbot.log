@@ -1,0 +1,48 @@
+2024-11-26 18:41:40,776 - chatbot_log - INFO - User query: What is You name?
+2024-11-26 18:41:40,776 - chatbot_log - INFO - Chatbot response: AlRashid
+2024-11-26 18:41:40,776 - chatbot_log - INFO - Time taken: 4.17 seconds
+2024-11-26 18:42:12,607 - chatbot_log - INFO - User query: how are u AlRashid?
+2024-11-26 18:42:12,607 - chatbot_log - INFO - Chatbot response: Muslim
+2024-11-26 18:42:12,607 - chatbot_log - INFO - Time taken: 2.93 seconds
+2024-11-26 18:42:35,784 - chatbot_log - INFO - User query: Greate Grea, u can give me food with Price
+2024-11-26 18:42:35,784 - chatbot_log - INFO - Chatbot response: Greate Grea
+2024-11-26 18:42:35,784 - chatbot_log - INFO - Time taken: 3.22 seconds
+2024-11-26 18:42:57,275 - chatbot_log - INFO - User query: How match Price the Beef?
+2024-11-26 18:42:57,275 - chatbot_log - INFO - Chatbot response: The price of the beef is the same as the price of the lamb.
+2024-11-26 18:42:57,275 - chatbot_log - INFO - Time taken: 3.86 seconds
+2024-11-26 18:43:18,811 - chatbot_log - INFO - User query: how
+2024-11-26 18:43:18,811 - chatbot_log - INFO - Chatbot response: Luqaimat: Small, golden-brown dumplings deep-fried and drizzled with date syrup (Ingredients: Flour, sugar, yeast, water, date syrup, Allergens: Gluten)
+2024-11-26 18:43:18,811 - chatbot_log - INFO - Time taken: 6.42 seconds
+2024-11-26 18:58:48,353 - chatbot_log - INFO - User query: What is You name?
+2024-11-26 18:58:48,353 - chatbot_log - INFO - Chatbot response: AlRashid
+2024-11-26 18:58:48,353 - chatbot_log - INFO - Time taken: 3.48 seconds
+2024-11-26 18:59:42,895 - chatbot_log - INFO - User query: What is You name?
+2024-11-26 18:59:42,895 - chatbot_log - INFO - Chatbot response: AlRashid
+2024-11-26 18:59:42,895 - chatbot_log - INFO - Time taken: 2.77 seconds
+2024-11-26 19:00:53,317 - chatbot_log - INFO - User query: What is You name?
+2024-11-26 19:00:53,318 - chatbot_log - INFO - Chatbot response: AlRashid
+2024-11-26 19:00:53,318 - chatbot_log - INFO - Time taken: 3.34 seconds
+2024-11-26 19:02:00,228 - chatbot_log - INFO - User query: tell me more about your self?
+2024-11-26 19:02:00,229 - chatbot_log - INFO - Chatbot response: AlRashid is a Saudi Arabian Muslim.
+2024-11-26 19:02:00,229 - chatbot_log - INFO - Time taken: 3.23 seconds
+2024-11-27 11:03:41,537 - chatbot_log - INFO - User query: hello what is your name?
+2024-11-27 11:03:41,537 - chatbot_log - INFO - Chatbot response: AlRashid
+2024-11-27 11:03:41,537 - chatbot_log - INFO - Time taken: 3.91 seconds
+2024-11-27 11:03:44,210 - chatbot_log - INFO - User query: hello what is your name?
+2024-11-27 11:03:44,210 - chatbot_log - INFO - Chatbot response: AlRashid
+2024-11-27 11:03:44,210 - chatbot_log - INFO - Time taken: 2.67 seconds
+2024-11-27 11:04:46,373 - chatbot_log - INFO - User query: Me friand nasser have graduation project for planets?
+2024-11-27 11:04:46,373 - chatbot_log - INFO - Chatbot response: The graduation project for planets is a science project.
+2024-11-27 11:04:46,374 - chatbot_log - INFO - Time taken: 3.90 seconds
+2024-11-27 11:04:50,423 - chatbot_log - INFO - User query: Me friand nasser have graduation project for planets?
+2024-11-27 11:04:50,423 - chatbot_log - INFO - Chatbot response: No, he has a graduation project for planets.
+2024-11-27 11:04:50,423 - chatbot_log - INFO - Time taken: 4.05 seconds
+2024-11-27 11:32:30,321 - chatbot_log - INFO - User query: What is You name?
+2024-11-27 11:32:30,321 - chatbot_log - INFO - Chatbot response: AlRashid
+2024-11-27 11:32:30,321 - chatbot_log - INFO - Time taken: 3.16 seconds
+2024-11-27 11:34:46,940 - chatbot_log - INFO - User query: Hou u can help me?
+2024-11-27 11:34:46,940 - chatbot_log - INFO - Chatbot response: You can call us at 123-456-7890.
+2024-11-27 11:34:46,940 - chatbot_log - INFO - Time taken: 3.81 seconds
+2024-11-27 11:35:12,914 - chatbot_log - INFO - User query: What is Kabsa?
+2024-11-27 11:35:12,914 - chatbot_log - INFO - Chatbot response: A traditional mixed rice dish with meat and vegetables. (Ingredients: Basmati rice, chicken or lamb, vegetables (carrots, peas, onions), spices (cinnamon, cloves, cardamom), ghee or oil, Allergens: Gluten, Dairy (if ghee is used))
+2024-11-27 11:35:12,914 - chatbot_log - INFO - Time taken: 11.17 seconds

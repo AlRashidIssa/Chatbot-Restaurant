@@ -18,8 +18,11 @@ RUN python -m venv EnV && \
 # Run Tests
 RUN /workspaces/Chatbot-Restaurant/EnV/bin/pytest -v tests/
 
-# Expose the application port
+# Monitoring Logs API.
 EXPOSE 8000
 
+# Chatboot API 
+EXPOSE 5000
+
 # Command to run the application
-CMD ["uvicorn", "src.api.app:app", "--reload", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["python", "run.py"]

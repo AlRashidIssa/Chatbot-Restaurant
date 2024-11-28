@@ -203,3 +203,638 @@
 2024-11-26 17:33:10,886 - inference_log - INFO - FAISS index created successfully.
 2024-11-26 17:33:10,888 - inference_log - INFO - Embeddings added to the FAISS index successfully.
 2024-11-26 17:33:10,894 - inference_log - INFO - FAISS index creation completed successfully.
+2024-11-26 17:38:18,182 - inference_log - INFO - Loading FLAN-T5 model...
+2024-11-26 17:38:19,400 - inference_log - INFO - Successfully loaded the FLAN-T5 model.
+2024-11-26 17:38:19,401 - inference_log - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2024-11-26 17:38:20,613 - inference_log - INFO - Successfully loaded the SentenceTransformer model.
+2024-11-26 17:38:20,616 - inference_log - INFO - SentenceTransformer model 'all-MiniLM-L6-v2' loaded successfully.
+2024-11-26 17:38:20,618 - inference_log - INFO - Using alternative configuration file: /workspaces/Chatbot-Restaurant/configs/config.yaml
+2024-11-26 17:38:20,630 - inference_log - INFO - Successfully loaded configuration from YAML file.
+2024-11-26 17:38:20,631 - inference_log - INFO - Configuration loaded successfully.
+2024-11-26 17:38:20,631 - inference_log - INFO - Project configuration loaded successfully.
+2024-11-26 17:38:20,632 - inference_log - INFO - Database configuration loaded successfully.
+2024-11-26 17:38:20,632 - inference_log - INFO - Retrieval configuration loaded successfully.
+2024-11-26 17:38:20,632 - inference_log - INFO - Generative model configuration loaded successfully.
+2024-11-26 17:38:20,632 - inference_log - INFO - API configuration loaded successfully.
+2024-11-26 17:38:20,632 - inference_log - INFO - Connecting to the SQLite database at /workspaces/Chatbot-Restaurant/database/restaurant.db...
+2024-11-26 17:38:20,633 - inference_log - INFO - Executing query: SELECT * FROM faqs;
+2024-11-26 17:38:20,634 - inference_log - INFO - Query executed successfully and database connection closed.
+2024-11-26 17:38:20,635 - inference_log - INFO - Data ingested successfully from /workspaces/Chatbot-Restaurant/database/restaurant.db with query: SELECT * FROM faqs;...
+2024-11-26 17:38:20,635 - inference_log - INFO - Connecting to the SQLite database at /workspaces/Chatbot-Restaurant/database/restaurant.db...
+2024-11-26 17:38:20,635 - inference_log - INFO - Executing query: SELECT * FROM menu_items;
+2024-11-26 17:38:20,642 - inference_log - INFO - Query executed successfully and database connection closed.
+2024-11-26 17:38:20,642 - inference_log - INFO - Data ingested successfully from /workspaces/Chatbot-Restaurant/database/restaurant.db with query: SELECT * FROM menu_items;...
+2024-11-26 17:38:20,646 - inference_log - INFO - Starting Combining Columns
+2024-11-26 17:38:20,646 - inference_log - INFO - Verified Types Columns
+2024-11-26 17:38:20,647 - inference_log - INFO - Verified Types Data
+2024-11-26 17:38:20,649 - inference_log - INFO - Successfully Combined Columns
+2024-11-26 17:38:20,649 - inference_log - INFO - Starting Combining Columns
+2024-11-26 17:38:20,649 - inference_log - INFO - Verified Types Columns
+2024-11-26 17:38:20,649 - inference_log - INFO - Verified Types Data
+2024-11-26 17:38:20,655 - inference_log - INFO - Successfully Combined Columns
+2024-11-26 17:38:20,656 - inference_log - INFO - Starting embedding for column: combined
+2024-11-26 17:38:22,689 - inference_log - INFO - Successfully generated embeddings for column: combined
+2024-11-26 17:38:22,690 - inference_log - INFO - Successfully converted embeddings to a NumPy array.
+2024-11-26 17:38:22,690 - inference_log - INFO - Starting embedding for column: combined
+2024-11-26 17:38:46,291 - inference_log - INFO - Successfully generated embeddings for column: combined
+2024-11-26 17:38:46,293 - inference_log - INFO - Successfully converted embeddings to a NumPy array.
+2024-11-26 17:38:46,293 - inference_log - INFO - Starting FAISS index creation. Embedding array shape: (111, 384)
+2024-11-26 17:38:46,294 - inference_log - INFO - FAISS index created successfully.
+2024-11-26 17:38:46,294 - inference_log - INFO - Embeddings added to the FAISS index successfully.
+2024-11-26 17:38:46,295 - inference_log - INFO - FAISS index creation completed successfully.
+2024-11-26 17:38:46,295 - inference_log - INFO - Starting FAISS index creation. Embedding array shape: (944, 384)
+2024-11-26 17:38:46,295 - inference_log - INFO - FAISS index created successfully.
+2024-11-26 17:38:46,297 - inference_log - INFO - Embeddings added to the FAISS index successfully.
+2024-11-26 17:38:46,297 - inference_log - INFO - FAISS index creation completed successfully.
+2024-11-26 17:38:52,904 - inference_log - INFO - Loading FLAN-T5 model...
+2024-11-26 17:38:53,830 - inference_log - INFO - Successfully loaded the FLAN-T5 model.
+2024-11-26 17:38:53,830 - inference_log - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2024-11-26 17:38:55,235 - inference_log - INFO - Successfully loaded the SentenceTransformer model.
+2024-11-26 17:38:55,236 - inference_log - INFO - SentenceTransformer model 'all-MiniLM-L6-v2' loaded successfully.
+2024-11-26 17:38:55,237 - inference_log - INFO - Using alternative configuration file: /workspaces/Chatbot-Restaurant/configs/config.yaml
+2024-11-26 17:38:55,241 - inference_log - INFO - Successfully loaded configuration from YAML file.
+2024-11-26 17:38:55,241 - inference_log - INFO - Configuration loaded successfully.
+2024-11-26 17:38:55,241 - inference_log - INFO - Project configuration loaded successfully.
+2024-11-26 17:38:55,242 - inference_log - INFO - Database configuration loaded successfully.
+2024-11-26 17:38:55,242 - inference_log - INFO - Retrieval configuration loaded successfully.
+2024-11-26 17:38:55,242 - inference_log - INFO - Generative model configuration loaded successfully.
+2024-11-26 17:38:55,242 - inference_log - INFO - API configuration loaded successfully.
+2024-11-26 17:38:55,242 - inference_log - INFO - Connecting to the SQLite database at /workspaces/Chatbot-Restaurant/database/restaurant.db...
+2024-11-26 17:38:55,243 - inference_log - INFO - Executing query: SELECT * FROM faqs;
+2024-11-26 17:38:55,245 - inference_log - INFO - Query executed successfully and database connection closed.
+2024-11-26 17:38:55,245 - inference_log - INFO - Data ingested successfully from /workspaces/Chatbot-Restaurant/database/restaurant.db with query: SELECT * FROM faqs;...
+2024-11-26 17:38:55,245 - inference_log - INFO - Connecting to the SQLite database at /workspaces/Chatbot-Restaurant/database/restaurant.db...
+2024-11-26 17:38:55,245 - inference_log - INFO - Executing query: SELECT * FROM menu_items;
+2024-11-26 17:38:55,251 - inference_log - INFO - Query executed successfully and database connection closed.
+2024-11-26 17:38:55,251 - inference_log - INFO - Data ingested successfully from /workspaces/Chatbot-Restaurant/database/restaurant.db with query: SELECT * FROM menu_items;...
+2024-11-26 17:38:55,254 - inference_log - INFO - Starting Combining Columns
+2024-11-26 17:38:55,254 - inference_log - INFO - Verified Types Columns
+2024-11-26 17:38:55,255 - inference_log - INFO - Verified Types Data
+2024-11-26 17:38:55,258 - inference_log - INFO - Successfully Combined Columns
+2024-11-26 17:38:55,258 - inference_log - INFO - Starting Combining Columns
+2024-11-26 17:38:55,258 - inference_log - INFO - Verified Types Columns
+2024-11-26 17:38:55,258 - inference_log - INFO - Verified Types Data
+2024-11-26 17:38:55,270 - inference_log - INFO - Successfully Combined Columns
+2024-11-26 17:38:55,270 - inference_log - INFO - Starting embedding for column: combined
+2024-11-26 17:38:57,240 - inference_log - INFO - Successfully generated embeddings for column: combined
+2024-11-26 17:38:57,241 - inference_log - INFO - Successfully converted embeddings to a NumPy array.
+2024-11-26 17:38:57,241 - inference_log - INFO - Starting embedding for column: combined
+2024-11-26 17:39:15,171 - inference_log - INFO - Successfully generated embeddings for column: combined
+2024-11-26 18:26:51,115 - inference_log - INFO - Loading FLAN-T5 model...
+2024-11-26 18:26:52,373 - inference_log - INFO - Successfully loaded the FLAN-T5 model.
+2024-11-26 18:26:52,374 - inference_log - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2024-11-26 18:26:53,486 - inference_log - INFO - Successfully loaded the SentenceTransformer model.
+2024-11-26 18:26:53,487 - inference_log - INFO - SentenceTransformer model 'all-MiniLM-L6-v2' loaded successfully.
+2024-11-26 18:26:53,487 - inference_log - INFO - Using alternative configuration file: /workspaces/Chatbot-Restaurant/configs/config.yaml
+2024-11-26 18:26:53,492 - inference_log - INFO - Successfully loaded configuration from YAML file.
+2024-11-26 18:26:53,492 - inference_log - INFO - Configuration loaded successfully.
+2024-11-26 18:26:53,492 - inference_log - INFO - Project configuration loaded successfully.
+2024-11-26 18:26:53,493 - inference_log - INFO - Database configuration loaded successfully.
+2024-11-26 18:26:53,493 - inference_log - INFO - Retrieval configuration loaded successfully.
+2024-11-26 18:26:53,493 - inference_log - INFO - Generative model configuration loaded successfully.
+2024-11-26 18:26:53,494 - inference_log - INFO - API configuration loaded successfully.
+2024-11-26 18:26:53,494 - inference_log - INFO - Connecting to the SQLite database at /workspaces/Chatbot-Restaurant/database/restaurant.db...
+2024-11-26 18:26:53,495 - inference_log - INFO - Executing query: SELECT * FROM faqs;
+2024-11-26 18:26:53,497 - inference_log - INFO - Query executed successfully and database connection closed.
+2024-11-26 18:26:53,497 - inference_log - INFO - Data ingested successfully from /workspaces/Chatbot-Restaurant/database/restaurant.db with query: SELECT * FROM faqs;...
+2024-11-26 18:26:53,498 - inference_log - INFO - Connecting to the SQLite database at /workspaces/Chatbot-Restaurant/database/restaurant.db...
+2024-11-26 18:26:53,498 - inference_log - INFO - Executing query: SELECT * FROM menu_items;
+2024-11-26 18:26:53,504 - inference_log - INFO - Query executed successfully and database connection closed.
+2024-11-26 18:26:53,505 - inference_log - INFO - Data ingested successfully from /workspaces/Chatbot-Restaurant/database/restaurant.db with query: SELECT * FROM menu_items;...
+2024-11-26 18:26:53,508 - inference_log - INFO - Starting Combining Columns
+2024-11-26 18:26:53,508 - inference_log - INFO - Verified Types Columns
+2024-11-26 18:26:53,508 - inference_log - INFO - Verified Types Data
+2024-11-26 18:26:53,511 - inference_log - INFO - Successfully Combined Columns
+2024-11-26 18:26:53,512 - inference_log - INFO - Starting Combining Columns
+2024-11-26 18:26:53,513 - inference_log - INFO - Verified Types Columns
+2024-11-26 18:26:53,513 - inference_log - INFO - Verified Types Data
+2024-11-26 18:26:53,525 - inference_log - INFO - Successfully Combined Columns
+2024-11-26 18:26:53,525 - inference_log - INFO - Starting embedding for column: combined
+2024-11-26 18:26:55,666 - inference_log - INFO - Successfully generated embeddings for column: combined
+2024-11-26 18:26:55,667 - inference_log - INFO - Successfully converted embeddings to a NumPy array.
+2024-11-26 18:26:55,667 - inference_log - INFO - Starting embedding for column: combined
+2024-11-26 18:27:19,888 - inference_log - INFO - Successfully generated embeddings for column: combined
+2024-11-26 18:27:19,891 - inference_log - INFO - Successfully converted embeddings to a NumPy array.
+2024-11-26 18:27:19,892 - inference_log - INFO - Starting FAISS index creation. Embedding array shape: (111, 384)
+2024-11-26 18:27:19,892 - inference_log - INFO - FAISS index created successfully.
+2024-11-26 18:27:19,892 - inference_log - INFO - Embeddings added to the FAISS index successfully.
+2024-11-26 18:27:19,893 - inference_log - INFO - FAISS index creation completed successfully.
+2024-11-26 18:27:19,893 - inference_log - INFO - Starting FAISS index creation. Embedding array shape: (944, 384)
+2024-11-26 18:27:19,894 - inference_log - INFO - FAISS index created successfully.
+2024-11-26 18:27:19,895 - inference_log - INFO - Embeddings added to the FAISS index successfully.
+2024-11-26 18:27:19,896 - inference_log - INFO - FAISS index creation completed successfully.
+2024-11-26 18:28:29,969 - inference_log - INFO - Loading FLAN-T5 model...
+2024-11-26 18:28:30,895 - inference_log - INFO - Successfully loaded the FLAN-T5 model.
+2024-11-26 18:28:30,895 - inference_log - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2024-11-26 18:28:32,123 - inference_log - INFO - Successfully loaded the SentenceTransformer model.
+2024-11-26 18:28:32,123 - inference_log - INFO - SentenceTransformer model 'all-MiniLM-L6-v2' loaded successfully.
+2024-11-26 18:28:32,123 - inference_log - INFO - Using alternative configuration file: /workspaces/Chatbot-Restaurant/configs/config.yaml
+2024-11-26 18:28:32,126 - inference_log - INFO - Successfully loaded configuration from YAML file.
+2024-11-26 18:28:32,126 - inference_log - INFO - Configuration loaded successfully.
+2024-11-26 18:28:32,126 - inference_log - INFO - Project configuration loaded successfully.
+2024-11-26 18:28:32,126 - inference_log - INFO - Database configuration loaded successfully.
+2024-11-26 18:28:32,126 - inference_log - INFO - Retrieval configuration loaded successfully.
+2024-11-26 18:28:32,126 - inference_log - INFO - Generative model configuration loaded successfully.
+2024-11-26 18:28:32,126 - inference_log - INFO - API configuration loaded successfully.
+2024-11-26 18:28:32,126 - inference_log - INFO - Connecting to the SQLite database at /workspaces/Chatbot-Restaurant/database/restaurant.db...
+2024-11-26 18:28:32,126 - inference_log - INFO - Executing query: SELECT * FROM faqs;
+2024-11-26 18:28:32,128 - inference_log - INFO - Query executed successfully and database connection closed.
+2024-11-26 18:28:32,128 - inference_log - INFO - Data ingested successfully from /workspaces/Chatbot-Restaurant/database/restaurant.db with query: SELECT * FROM faqs;...
+2024-11-26 18:28:32,128 - inference_log - INFO - Connecting to the SQLite database at /workspaces/Chatbot-Restaurant/database/restaurant.db...
+2024-11-26 18:28:32,128 - inference_log - INFO - Executing query: SELECT * FROM menu_items;
+2024-11-26 18:28:32,132 - inference_log - INFO - Query executed successfully and database connection closed.
+2024-11-26 18:28:32,132 - inference_log - INFO - Data ingested successfully from /workspaces/Chatbot-Restaurant/database/restaurant.db with query: SELECT * FROM menu_items;...
+2024-11-26 18:28:32,134 - inference_log - INFO - Starting Combining Columns
+2024-11-26 18:28:32,134 - inference_log - INFO - Verified Types Columns
+2024-11-26 18:28:32,134 - inference_log - INFO - Verified Types Data
+2024-11-26 18:28:32,137 - inference_log - INFO - Successfully Combined Columns
+2024-11-26 18:28:32,137 - inference_log - INFO - Starting Combining Columns
+2024-11-26 18:28:32,137 - inference_log - INFO - Verified Types Columns
+2024-11-26 18:28:32,137 - inference_log - INFO - Verified Types Data
+2024-11-26 18:28:32,144 - inference_log - INFO - Successfully Combined Columns
+2024-11-26 18:28:32,144 - inference_log - INFO - Starting embedding for column: combined
+2024-11-26 18:28:34,048 - inference_log - INFO - Successfully generated embeddings for column: combined
+2024-11-26 18:28:34,049 - inference_log - INFO - Successfully converted embeddings to a NumPy array.
+2024-11-26 18:28:34,049 - inference_log - INFO - Starting embedding for column: combined
+2024-11-26 18:28:54,539 - inference_log - INFO - Successfully generated embeddings for column: combined
+2024-11-26 18:28:54,540 - inference_log - INFO - Successfully converted embeddings to a NumPy array.
+2024-11-26 18:28:54,540 - inference_log - INFO - Starting FAISS index creation. Embedding array shape: (111, 384)
+2024-11-26 18:28:54,541 - inference_log - INFO - FAISS index created successfully.
+2024-11-26 18:28:54,541 - inference_log - INFO - Embeddings added to the FAISS index successfully.
+2024-11-26 18:28:54,541 - inference_log - INFO - FAISS index creation completed successfully.
+2024-11-26 18:28:54,541 - inference_log - INFO - Starting FAISS index creation. Embedding array shape: (944, 384)
+2024-11-26 18:28:54,542 - inference_log - INFO - FAISS index created successfully.
+2024-11-26 18:28:54,543 - inference_log - INFO - Embeddings added to the FAISS index successfully.
+2024-11-26 18:28:54,543 - inference_log - INFO - FAISS index creation completed successfully.
+2024-11-26 18:29:01,341 - inference_log - INFO - Loading FLAN-T5 model...
+2024-11-26 18:29:02,255 - inference_log - INFO - Successfully loaded the FLAN-T5 model.
+2024-11-26 18:29:02,255 - inference_log - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2024-11-26 18:29:03,466 - inference_log - INFO - Successfully loaded the SentenceTransformer model.
+2024-11-26 18:29:03,467 - inference_log - INFO - SentenceTransformer model 'all-MiniLM-L6-v2' loaded successfully.
+2024-11-26 18:29:03,467 - inference_log - INFO - Using alternative configuration file: /workspaces/Chatbot-Restaurant/configs/config.yaml
+2024-11-26 18:29:03,471 - inference_log - INFO - Successfully loaded configuration from YAML file.
+2024-11-26 18:29:03,471 - inference_log - INFO - Configuration loaded successfully.
+2024-11-26 18:29:03,471 - inference_log - INFO - Project configuration loaded successfully.
+2024-11-26 18:29:03,471 - inference_log - INFO - Database configuration loaded successfully.
+2024-11-26 18:29:03,471 - inference_log - INFO - Retrieval configuration loaded successfully.
+2024-11-26 18:29:03,472 - inference_log - INFO - Generative model configuration loaded successfully.
+2024-11-26 18:29:03,472 - inference_log - INFO - API configuration loaded successfully.
+2024-11-26 18:29:03,472 - inference_log - INFO - Connecting to the SQLite database at /workspaces/Chatbot-Restaurant/database/restaurant.db...
+2024-11-26 18:29:03,472 - inference_log - INFO - Executing query: SELECT * FROM faqs;
+2024-11-26 18:29:03,474 - inference_log - INFO - Query executed successfully and database connection closed.
+2024-11-26 18:29:03,474 - inference_log - INFO - Data ingested successfully from /workspaces/Chatbot-Restaurant/database/restaurant.db with query: SELECT * FROM faqs;...
+2024-11-26 18:29:03,475 - inference_log - INFO - Connecting to the SQLite database at /workspaces/Chatbot-Restaurant/database/restaurant.db...
+2024-11-26 18:29:03,475 - inference_log - INFO - Executing query: SELECT * FROM menu_items;
+2024-11-26 18:29:03,480 - inference_log - INFO - Query executed successfully and database connection closed.
+2024-11-26 18:29:03,481 - inference_log - INFO - Data ingested successfully from /workspaces/Chatbot-Restaurant/database/restaurant.db with query: SELECT * FROM menu_items;...
+2024-11-26 18:29:03,484 - inference_log - INFO - Starting Combining Columns
+2024-11-26 18:29:03,484 - inference_log - INFO - Verified Types Columns
+2024-11-26 18:29:03,484 - inference_log - INFO - Verified Types Data
+2024-11-26 18:29:03,487 - inference_log - INFO - Successfully Combined Columns
+2024-11-26 18:29:03,487 - inference_log - INFO - Starting Combining Columns
+2024-11-26 18:29:03,487 - inference_log - INFO - Verified Types Columns
+2024-11-26 18:29:03,487 - inference_log - INFO - Verified Types Data
+2024-11-26 18:29:03,499 - inference_log - INFO - Successfully Combined Columns
+2024-11-26 18:29:03,499 - inference_log - INFO - Starting embedding for column: combined
+2024-11-26 18:29:05,193 - inference_log - INFO - Successfully generated embeddings for column: combined
+2024-11-26 18:29:05,193 - inference_log - INFO - Successfully converted embeddings to a NumPy array.
+2024-11-26 18:29:05,194 - inference_log - INFO - Starting embedding for column: combined
+2024-11-26 18:29:26,742 - inference_log - INFO - Successfully generated embeddings for column: combined
+2024-11-26 18:29:26,744 - inference_log - INFO - Successfully converted embeddings to a NumPy array.
+2024-11-26 18:29:26,744 - inference_log - INFO - Starting FAISS index creation. Embedding array shape: (111, 384)
+2024-11-26 18:29:26,745 - inference_log - INFO - FAISS index created successfully.
+2024-11-26 18:29:26,745 - inference_log - INFO - Embeddings added to the FAISS index successfully.
+2024-11-26 18:29:26,745 - inference_log - INFO - FAISS index creation completed successfully.
+2024-11-26 18:29:26,746 - inference_log - INFO - Starting FAISS index creation. Embedding array shape: (944, 384)
+2024-11-26 18:29:26,746 - inference_log - INFO - FAISS index created successfully.
+2024-11-26 18:29:26,747 - inference_log - INFO - Embeddings added to the FAISS index successfully.
+2024-11-26 18:29:26,747 - inference_log - INFO - FAISS index creation completed successfully.
+2024-11-26 18:29:33,424 - inference_log - INFO - Loading FLAN-T5 model...
+2024-11-26 18:29:34,301 - inference_log - INFO - Successfully loaded the FLAN-T5 model.
+2024-11-26 18:29:34,301 - inference_log - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2024-11-26 18:29:35,427 - inference_log - INFO - Successfully loaded the SentenceTransformer model.
+2024-11-26 18:29:35,427 - inference_log - INFO - SentenceTransformer model 'all-MiniLM-L6-v2' loaded successfully.
+2024-11-26 18:29:35,427 - inference_log - INFO - Using alternative configuration file: /workspaces/Chatbot-Restaurant/configs/config.yaml
+2024-11-26 18:29:35,430 - inference_log - INFO - Successfully loaded configuration from YAML file.
+2024-11-26 18:29:35,430 - inference_log - INFO - Configuration loaded successfully.
+2024-11-26 18:29:35,430 - inference_log - INFO - Project configuration loaded successfully.
+2024-11-26 18:29:35,430 - inference_log - INFO - Database configuration loaded successfully.
+2024-11-26 18:29:35,430 - inference_log - INFO - Retrieval configuration loaded successfully.
+2024-11-26 18:29:35,430 - inference_log - INFO - Generative model configuration loaded successfully.
+2024-11-26 18:29:35,430 - inference_log - INFO - API configuration loaded successfully.
+2024-11-26 18:29:35,431 - inference_log - INFO - Connecting to the SQLite database at /workspaces/Chatbot-Restaurant/database/restaurant.db...
+2024-11-26 18:29:35,431 - inference_log - INFO - Executing query: SELECT * FROM faqs;
+2024-11-26 18:29:35,432 - inference_log - INFO - Query executed successfully and database connection closed.
+2024-11-26 18:29:35,432 - inference_log - INFO - Data ingested successfully from /workspaces/Chatbot-Restaurant/database/restaurant.db with query: SELECT * FROM faqs;...
+2024-11-26 18:29:35,432 - inference_log - INFO - Connecting to the SQLite database at /workspaces/Chatbot-Restaurant/database/restaurant.db...
+2024-11-26 18:29:35,432 - inference_log - INFO - Executing query: SELECT * FROM menu_items;
+2024-11-26 18:29:35,436 - inference_log - INFO - Query executed successfully and database connection closed.
+2024-11-26 18:29:35,436 - inference_log - INFO - Data ingested successfully from /workspaces/Chatbot-Restaurant/database/restaurant.db with query: SELECT * FROM menu_items;...
+2024-11-26 18:29:35,438 - inference_log - INFO - Starting Combining Columns
+2024-11-26 18:29:35,438 - inference_log - INFO - Verified Types Columns
+2024-11-26 18:29:35,438 - inference_log - INFO - Verified Types Data
+2024-11-26 18:29:35,440 - inference_log - INFO - Successfully Combined Columns
+2024-11-26 18:29:35,441 - inference_log - INFO - Starting Combining Columns
+2024-11-26 18:29:35,441 - inference_log - INFO - Verified Types Columns
+2024-11-26 18:29:35,441 - inference_log - INFO - Verified Types Data
+2024-11-26 18:29:35,447 - inference_log - INFO - Successfully Combined Columns
+2024-11-26 18:29:35,447 - inference_log - INFO - Starting embedding for column: combined
+2024-11-26 18:29:37,137 - inference_log - INFO - Successfully generated embeddings for column: combined
+2024-11-26 18:29:37,138 - inference_log - INFO - Successfully converted embeddings to a NumPy array.
+2024-11-26 18:29:37,138 - inference_log - INFO - Starting embedding for column: combined
+2024-11-26 18:29:55,883 - inference_log - INFO - Successfully generated embeddings for column: combined
+2024-11-26 18:29:55,885 - inference_log - INFO - Successfully converted embeddings to a NumPy array.
+2024-11-26 18:29:55,885 - inference_log - INFO - Starting FAISS index creation. Embedding array shape: (111, 384)
+2024-11-26 18:29:55,885 - inference_log - INFO - FAISS index created successfully.
+2024-11-26 18:29:55,885 - inference_log - INFO - Embeddings added to the FAISS index successfully.
+2024-11-26 18:29:55,886 - inference_log - INFO - FAISS index creation completed successfully.
+2024-11-26 18:29:55,886 - inference_log - INFO - Starting FAISS index creation. Embedding array shape: (944, 384)
+2024-11-26 18:29:55,886 - inference_log - INFO - FAISS index created successfully.
+2024-11-26 18:29:55,887 - inference_log - INFO - Embeddings added to the FAISS index successfully.
+2024-11-26 18:29:55,887 - inference_log - INFO - FAISS index creation completed successfully.
+2024-11-26 18:30:02,155 - inference_log - INFO - Loading FLAN-T5 model...
+2024-11-26 18:30:03,433 - inference_log - INFO - Successfully loaded the FLAN-T5 model.
+2024-11-26 18:30:03,434 - inference_log - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2024-11-26 18:30:04,627 - inference_log - INFO - Successfully loaded the SentenceTransformer model.
+2024-11-26 18:30:04,627 - inference_log - INFO - SentenceTransformer model 'all-MiniLM-L6-v2' loaded successfully.
+2024-11-26 18:30:04,628 - inference_log - INFO - Using alternative configuration file: /workspaces/Chatbot-Restaurant/configs/config.yaml
+2024-11-26 18:30:04,632 - inference_log - INFO - Successfully loaded configuration from YAML file.
+2024-11-26 18:30:04,632 - inference_log - INFO - Configuration loaded successfully.
+2024-11-26 18:30:04,632 - inference_log - INFO - Project configuration loaded successfully.
+2024-11-26 18:30:04,633 - inference_log - INFO - Database configuration loaded successfully.
+2024-11-26 18:30:04,633 - inference_log - INFO - Retrieval configuration loaded successfully.
+2024-11-26 18:30:04,633 - inference_log - INFO - Generative model configuration loaded successfully.
+2024-11-26 18:30:04,633 - inference_log - INFO - API configuration loaded successfully.
+2024-11-26 18:30:04,634 - inference_log - INFO - Connecting to the SQLite database at /workspaces/Chatbot-Restaurant/database/restaurant.db...
+2024-11-26 18:30:04,634 - inference_log - INFO - Executing query: SELECT * FROM faqs;
+2024-11-26 18:30:04,637 - inference_log - INFO - Query executed successfully and database connection closed.
+2024-11-26 18:30:04,637 - inference_log - INFO - Data ingested successfully from /workspaces/Chatbot-Restaurant/database/restaurant.db with query: SELECT * FROM faqs;...
+2024-11-26 18:30:04,638 - inference_log - INFO - Connecting to the SQLite database at /workspaces/Chatbot-Restaurant/database/restaurant.db...
+2024-11-26 18:30:04,638 - inference_log - INFO - Executing query: SELECT * FROM menu_items;
+2024-11-26 18:30:04,644 - inference_log - INFO - Query executed successfully and database connection closed.
+2024-11-26 18:30:04,645 - inference_log - INFO - Data ingested successfully from /workspaces/Chatbot-Restaurant/database/restaurant.db with query: SELECT * FROM menu_items;...
+2024-11-26 18:30:04,649 - inference_log - INFO - Starting Combining Columns
+2024-11-26 18:30:04,649 - inference_log - INFO - Verified Types Columns
+2024-11-26 18:30:04,649 - inference_log - INFO - Verified Types Data
+2024-11-26 18:30:04,654 - inference_log - INFO - Successfully Combined Columns
+2024-11-26 18:30:04,654 - inference_log - INFO - Starting Combining Columns
+2024-11-26 18:30:04,654 - inference_log - INFO - Verified Types Columns
+2024-11-26 18:30:04,655 - inference_log - INFO - Verified Types Data
+2024-11-26 18:30:04,669 - inference_log - INFO - Successfully Combined Columns
+2024-11-26 18:30:04,669 - inference_log - INFO - Starting embedding for column: combined
+2024-11-26 18:30:06,516 - inference_log - INFO - Successfully generated embeddings for column: combined
+2024-11-26 18:30:06,517 - inference_log - INFO - Successfully converted embeddings to a NumPy array.
+2024-11-26 18:30:06,518 - inference_log - INFO - Starting embedding for column: combined
+2024-11-26 18:30:30,027 - inference_log - INFO - Successfully generated embeddings for column: combined
+2024-11-26 18:30:30,029 - inference_log - INFO - Successfully converted embeddings to a NumPy array.
+2024-11-26 18:30:30,030 - inference_log - INFO - Starting FAISS index creation. Embedding array shape: (111, 384)
+2024-11-26 18:30:30,030 - inference_log - INFO - FAISS index created successfully.
+2024-11-26 18:30:30,031 - inference_log - INFO - Embeddings added to the FAISS index successfully.
+2024-11-26 18:30:30,031 - inference_log - INFO - FAISS index creation completed successfully.
+2024-11-26 18:30:30,032 - inference_log - INFO - Starting FAISS index creation. Embedding array shape: (944, 384)
+2024-11-26 18:30:30,032 - inference_log - INFO - FAISS index created successfully.
+2024-11-26 18:30:30,034 - inference_log - INFO - Embeddings added to the FAISS index successfully.
+2024-11-26 18:30:30,034 - inference_log - INFO - FAISS index creation completed successfully.
+2024-11-26 18:32:22,622 - inference_log - INFO - Loading FLAN-T5 model...
+2024-11-26 18:32:23,785 - inference_log - INFO - Successfully loaded the FLAN-T5 model.
+2024-11-26 18:32:23,786 - inference_log - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2024-11-26 18:32:25,067 - inference_log - INFO - Successfully loaded the SentenceTransformer model.
+2024-11-26 18:32:25,068 - inference_log - INFO - SentenceTransformer model 'all-MiniLM-L6-v2' loaded successfully.
+2024-11-26 18:32:25,068 - inference_log - INFO - Using alternative configuration file: /workspaces/Chatbot-Restaurant/configs/config.yaml
+2024-11-26 18:32:25,072 - inference_log - INFO - Successfully loaded configuration from YAML file.
+2024-11-26 18:32:25,072 - inference_log - INFO - Configuration loaded successfully.
+2024-11-26 18:32:25,072 - inference_log - INFO - Project configuration loaded successfully.
+2024-11-26 18:32:25,072 - inference_log - INFO - Database configuration loaded successfully.
+2024-11-26 18:32:25,072 - inference_log - INFO - Retrieval configuration loaded successfully.
+2024-11-26 18:32:25,072 - inference_log - INFO - Generative model configuration loaded successfully.
+2024-11-26 18:32:25,072 - inference_log - INFO - API configuration loaded successfully.
+2024-11-26 18:32:25,072 - inference_log - INFO - Connecting to the SQLite database at /workspaces/Chatbot-Restaurant/database/restaurant.db...
+2024-11-26 18:32:25,073 - inference_log - INFO - Executing query: SELECT * FROM faqs;
+2024-11-26 18:32:25,074 - inference_log - INFO - Query executed successfully and database connection closed.
+2024-11-26 18:32:25,074 - inference_log - INFO - Data ingested successfully from /workspaces/Chatbot-Restaurant/database/restaurant.db with query: SELECT * FROM faqs;...
+2024-11-26 18:32:25,074 - inference_log - INFO - Connecting to the SQLite database at /workspaces/Chatbot-Restaurant/database/restaurant.db...
+2024-11-26 18:32:25,074 - inference_log - INFO - Executing query: SELECT * FROM menu_items;
+2024-11-26 18:32:25,078 - inference_log - INFO - Query executed successfully and database connection closed.
+2024-11-26 18:32:25,078 - inference_log - INFO - Data ingested successfully from /workspaces/Chatbot-Restaurant/database/restaurant.db with query: SELECT * FROM menu_items;...
+2024-11-26 18:32:25,081 - inference_log - INFO - Starting Combining Columns
+2024-11-26 18:32:25,081 - inference_log - INFO - Verified Types Columns
+2024-11-26 18:32:25,081 - inference_log - INFO - Verified Types Data
+2024-11-26 18:32:25,083 - inference_log - INFO - Successfully Combined Columns
+2024-11-26 18:32:25,083 - inference_log - INFO - Starting Combining Columns
+2024-11-26 18:32:25,084 - inference_log - INFO - Verified Types Columns
+2024-11-26 18:32:25,084 - inference_log - INFO - Verified Types Data
+2024-11-26 18:32:25,092 - inference_log - INFO - Successfully Combined Columns
+2024-11-26 18:32:25,092 - inference_log - INFO - Starting embedding for column: combined
+2024-11-26 18:32:26,946 - inference_log - INFO - Successfully generated embeddings for column: combined
+2024-11-26 18:32:26,947 - inference_log - INFO - Successfully converted embeddings to a NumPy array.
+2024-11-26 18:32:26,947 - inference_log - INFO - Starting embedding for column: combined
+2024-11-26 18:32:45,246 - inference_log - INFO - Successfully generated embeddings for column: combined
+2024-11-26 18:32:45,247 - inference_log - INFO - Successfully converted embeddings to a NumPy array.
+2024-11-26 18:32:45,247 - inference_log - INFO - Starting FAISS index creation. Embedding array shape: (111, 384)
+2024-11-26 18:32:45,248 - inference_log - INFO - FAISS index created successfully.
+2024-11-26 18:32:45,248 - inference_log - INFO - Embeddings added to the FAISS index successfully.
+2024-11-26 18:32:45,248 - inference_log - INFO - FAISS index creation completed successfully.
+2024-11-26 18:32:45,248 - inference_log - INFO - Starting FAISS index creation. Embedding array shape: (944, 384)
+2024-11-26 18:32:45,249 - inference_log - INFO - FAISS index created successfully.
+2024-11-26 18:32:45,249 - inference_log - INFO - Embeddings added to the FAISS index successfully.
+2024-11-26 18:32:45,249 - inference_log - INFO - FAISS index creation completed successfully.
+2024-11-26 18:32:51,562 - inference_log - INFO - Loading FLAN-T5 model...
+2024-11-26 18:32:52,501 - inference_log - INFO - Successfully loaded the FLAN-T5 model.
+2024-11-26 18:32:52,502 - inference_log - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2024-11-26 18:32:53,727 - inference_log - INFO - Successfully loaded the SentenceTransformer model.
+2024-11-26 18:32:53,728 - inference_log - INFO - SentenceTransformer model 'all-MiniLM-L6-v2' loaded successfully.
+2024-11-26 18:32:53,728 - inference_log - INFO - Using alternative configuration file: /workspaces/Chatbot-Restaurant/configs/config.yaml
+2024-11-26 18:32:53,732 - inference_log - INFO - Successfully loaded configuration from YAML file.
+2024-11-26 18:32:53,732 - inference_log - INFO - Configuration loaded successfully.
+2024-11-26 18:32:53,733 - inference_log - INFO - Project configuration loaded successfully.
+2024-11-26 18:32:53,733 - inference_log - INFO - Database configuration loaded successfully.
+2024-11-26 18:32:53,733 - inference_log - INFO - Retrieval configuration loaded successfully.
+2024-11-26 18:32:53,733 - inference_log - INFO - Generative model configuration loaded successfully.
+2024-11-26 18:32:53,734 - inference_log - INFO - API configuration loaded successfully.
+2024-11-26 18:32:53,734 - inference_log - INFO - Connecting to the SQLite database at /workspaces/Chatbot-Restaurant/database/restaurant.db...
+2024-11-26 18:32:53,734 - inference_log - INFO - Executing query: SELECT * FROM faqs;
+2024-11-26 18:32:53,736 - inference_log - INFO - Query executed successfully and database connection closed.
+2024-11-26 18:32:53,736 - inference_log - INFO - Data ingested successfully from /workspaces/Chatbot-Restaurant/database/restaurant.db with query: SELECT * FROM faqs;...
+2024-11-26 18:32:53,737 - inference_log - INFO - Connecting to the SQLite database at /workspaces/Chatbot-Restaurant/database/restaurant.db...
+2024-11-26 18:32:53,737 - inference_log - INFO - Executing query: SELECT * FROM menu_items;
+2024-11-26 18:32:53,743 - inference_log - INFO - Query executed successfully and database connection closed.
+2024-11-26 18:32:53,743 - inference_log - INFO - Data ingested successfully from /workspaces/Chatbot-Restaurant/database/restaurant.db with query: SELECT * FROM menu_items;...
+2024-11-26 18:32:53,746 - inference_log - INFO - Starting Combining Columns
+2024-11-26 18:32:53,746 - inference_log - INFO - Verified Types Columns
+2024-11-26 18:32:53,746 - inference_log - INFO - Verified Types Data
+2024-11-26 18:32:53,749 - inference_log - INFO - Successfully Combined Columns
+2024-11-26 18:32:53,750 - inference_log - INFO - Starting Combining Columns
+2024-11-26 18:32:53,750 - inference_log - INFO - Verified Types Columns
+2024-11-26 18:32:53,750 - inference_log - INFO - Verified Types Data
+2024-11-26 18:32:53,761 - inference_log - INFO - Successfully Combined Columns
+2024-11-26 18:32:53,762 - inference_log - INFO - Starting embedding for column: combined
+2024-11-26 18:32:55,738 - inference_log - INFO - Successfully generated embeddings for column: combined
+2024-11-26 18:32:55,738 - inference_log - INFO - Successfully converted embeddings to a NumPy array.
+2024-11-26 18:32:55,739 - inference_log - INFO - Starting embedding for column: combined
+2024-11-26 18:33:20,524 - inference_log - INFO - Successfully generated embeddings for column: combined
+2024-11-26 18:33:20,527 - inference_log - INFO - Successfully converted embeddings to a NumPy array.
+2024-11-26 18:33:20,527 - inference_log - INFO - Starting FAISS index creation. Embedding array shape: (111, 384)
+2024-11-26 18:33:20,528 - inference_log - INFO - FAISS index created successfully.
+2024-11-26 18:33:20,528 - inference_log - INFO - Embeddings added to the FAISS index successfully.
+2024-11-26 18:33:20,529 - inference_log - INFO - FAISS index creation completed successfully.
+2024-11-26 18:33:20,529 - inference_log - INFO - Starting FAISS index creation. Embedding array shape: (944, 384)
+2024-11-26 18:33:20,530 - inference_log - INFO - FAISS index created successfully.
+2024-11-26 18:33:20,531 - inference_log - INFO - Embeddings added to the FAISS index successfully.
+2024-11-26 18:33:20,532 - inference_log - INFO - FAISS index creation completed successfully.
+2024-11-26 18:41:36,605 - inference_log - INFO - Starting retrieval process.
+2024-11-26 18:41:36,621 - inference_log - INFO - Query encoded successfully: What is You name?
+2024-11-26 18:41:36,623 - inference_log - INFO - Top 10 results retrieved from index_1.
+2024-11-26 18:41:36,625 - inference_log - INFO - Top 10 results retrieved from index_2.
+2024-11-26 18:41:36,625 - inference_log - INFO - Retrieval process completed successfully.
+2024-11-26 18:41:36,625 - inference_log - INFO - Generating context for the model.
+2024-11-26 18:41:36,626 - inference_log - INFO - Context generated successfully.
+2024-11-26 18:41:40,775 - inference_log - INFO - Response generated successfully.
+2024-11-26 18:42:09,677 - inference_log - INFO - Starting retrieval process.
+2024-11-26 18:42:09,690 - inference_log - INFO - Query encoded successfully: how are u AlRashid?
+2024-11-26 18:42:09,691 - inference_log - INFO - Top 10 results retrieved from index_1.
+2024-11-26 18:42:09,692 - inference_log - INFO - Top 10 results retrieved from index_2.
+2024-11-26 18:42:09,692 - inference_log - INFO - Retrieval process completed successfully.
+2024-11-26 18:42:09,692 - inference_log - INFO - Generating context for the model.
+2024-11-26 18:42:09,692 - inference_log - INFO - Context generated successfully.
+2024-11-26 18:42:12,606 - inference_log - INFO - Response generated successfully.
+2024-11-26 18:42:32,562 - inference_log - INFO - Starting retrieval process.
+2024-11-26 18:42:32,579 - inference_log - INFO - Query encoded successfully: Greate Grea, u can give me food with Price
+2024-11-26 18:42:32,581 - inference_log - INFO - Top 10 results retrieved from index_1.
+2024-11-26 18:42:32,583 - inference_log - INFO - Top 10 results retrieved from index_2.
+2024-11-26 18:42:32,583 - inference_log - INFO - Retrieval process completed successfully.
+2024-11-26 18:42:32,584 - inference_log - INFO - Generating context for the model.
+2024-11-26 18:42:32,584 - inference_log - INFO - Context generated successfully.
+2024-11-26 18:42:35,784 - inference_log - INFO - Response generated successfully.
+2024-11-26 18:42:53,419 - inference_log - INFO - Starting retrieval process.
+2024-11-26 18:42:53,435 - inference_log - INFO - Query encoded successfully: How match Price the Beef?
+2024-11-26 18:42:53,436 - inference_log - INFO - Top 10 results retrieved from index_1.
+2024-11-26 18:42:53,438 - inference_log - INFO - Top 10 results retrieved from index_2.
+2024-11-26 18:42:53,438 - inference_log - INFO - Retrieval process completed successfully.
+2024-11-26 18:42:53,439 - inference_log - INFO - Generating context for the model.
+2024-11-26 18:42:53,439 - inference_log - INFO - Context generated successfully.
+2024-11-26 18:42:57,275 - inference_log - INFO - Response generated successfully.
+2024-11-26 18:43:12,392 - inference_log - INFO - Starting retrieval process.
+2024-11-26 18:43:12,409 - inference_log - INFO - Query encoded successfully: how
+2024-11-26 18:43:12,411 - inference_log - INFO - Top 10 results retrieved from index_1.
+2024-11-26 18:43:12,412 - inference_log - INFO - Top 10 results retrieved from index_2.
+2024-11-26 18:43:12,413 - inference_log - INFO - Retrieval process completed successfully.
+2024-11-26 18:43:12,413 - inference_log - INFO - Generating context for the model.
+2024-11-26 18:43:12,413 - inference_log - INFO - Context generated successfully.
+2024-11-26 18:43:18,810 - inference_log - INFO - Response generated successfully.
+2024-11-26 18:50:50,688 - inference_log - INFO - Loading FLAN-T5 model...
+2024-11-26 18:50:51,830 - inference_log - INFO - Successfully loaded the FLAN-T5 model.
+2024-11-26 18:50:51,831 - inference_log - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2024-11-26 18:50:53,051 - inference_log - INFO - Successfully loaded the SentenceTransformer model.
+2024-11-26 18:50:53,052 - inference_log - INFO - SentenceTransformer model 'all-MiniLM-L6-v2' loaded successfully.
+2024-11-26 18:50:53,052 - inference_log - INFO - Using alternative configuration file: /workspaces/Chatbot-Restaurant/configs/config.yaml
+2024-11-26 18:50:53,054 - inference_log - INFO - Successfully loaded configuration from YAML file.
+2024-11-26 18:50:53,055 - inference_log - INFO - Configuration loaded successfully.
+2024-11-26 18:50:53,055 - inference_log - INFO - Project configuration loaded successfully.
+2024-11-26 18:50:53,055 - inference_log - INFO - Database configuration loaded successfully.
+2024-11-26 18:50:53,055 - inference_log - INFO - Retrieval configuration loaded successfully.
+2024-11-26 18:50:53,055 - inference_log - INFO - Generative model configuration loaded successfully.
+2024-11-26 18:50:53,055 - inference_log - INFO - API configuration loaded successfully.
+2024-11-26 18:50:53,055 - inference_log - INFO - Connecting to the SQLite database at /workspaces/Chatbot-Restaurant/database/restaurant.db...
+2024-11-26 18:50:53,055 - inference_log - INFO - Executing query: SELECT * FROM faqs;
+2024-11-26 18:50:53,057 - inference_log - INFO - Query executed successfully and database connection closed.
+2024-11-26 18:50:53,057 - inference_log - INFO - Data ingested successfully from /workspaces/Chatbot-Restaurant/database/restaurant.db with query: SELECT * FROM faqs;...
+2024-11-26 18:50:53,057 - inference_log - INFO - Connecting to the SQLite database at /workspaces/Chatbot-Restaurant/database/restaurant.db...
+2024-11-26 18:50:53,057 - inference_log - INFO - Executing query: SELECT * FROM menu_items;
+2024-11-26 18:50:53,062 - inference_log - INFO - Query executed successfully and database connection closed.
+2024-11-26 18:50:53,062 - inference_log - INFO - Data ingested successfully from /workspaces/Chatbot-Restaurant/database/restaurant.db with query: SELECT * FROM menu_items;...
+2024-11-26 18:50:53,064 - inference_log - INFO - Starting Combining Columns
+2024-11-26 18:50:53,064 - inference_log - INFO - Verified Types Columns
+2024-11-26 18:50:53,064 - inference_log - INFO - Verified Types Data
+2024-11-26 18:50:53,066 - inference_log - INFO - Successfully Combined Columns
+2024-11-26 18:50:53,066 - inference_log - INFO - Starting Combining Columns
+2024-11-26 18:50:53,066 - inference_log - INFO - Verified Types Columns
+2024-11-26 18:50:53,066 - inference_log - INFO - Verified Types Data
+2024-11-26 18:50:53,073 - inference_log - INFO - Successfully Combined Columns
+2024-11-26 18:50:53,073 - inference_log - INFO - Starting embedding for column: combined
+2024-11-26 18:50:54,837 - inference_log - INFO - Successfully generated embeddings for column: combined
+2024-11-26 18:50:54,839 - inference_log - INFO - Successfully converted embeddings to a NumPy array.
+2024-11-26 18:50:54,839 - inference_log - INFO - Starting embedding for column: combined
+2024-11-26 18:51:15,005 - inference_log - INFO - Successfully generated embeddings for column: combined
+2024-11-26 18:51:15,006 - inference_log - INFO - Successfully converted embeddings to a NumPy array.
+2024-11-26 18:51:15,007 - inference_log - INFO - Starting FAISS index creation. Embedding array shape: (111, 384)
+2024-11-26 18:51:15,007 - inference_log - INFO - FAISS index created successfully.
+2024-11-26 18:51:15,007 - inference_log - INFO - Embeddings added to the FAISS index successfully.
+2024-11-26 18:51:15,007 - inference_log - INFO - FAISS index creation completed successfully.
+2024-11-26 18:51:15,007 - inference_log - INFO - Starting FAISS index creation. Embedding array shape: (944, 384)
+2024-11-26 18:51:15,008 - inference_log - INFO - FAISS index created successfully.
+2024-11-26 18:51:15,008 - inference_log - INFO - Embeddings added to the FAISS index successfully.
+2024-11-26 18:51:15,008 - inference_log - INFO - FAISS index creation completed successfully.
+2024-11-26 18:51:22,310 - inference_log - INFO - Loading FLAN-T5 model...
+2024-11-26 18:51:23,535 - inference_log - INFO - Successfully loaded the FLAN-T5 model.
+2024-11-26 18:51:23,536 - inference_log - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2024-11-26 18:51:24,757 - inference_log - INFO - Successfully loaded the SentenceTransformer model.
+2024-11-26 18:51:24,757 - inference_log - INFO - SentenceTransformer model 'all-MiniLM-L6-v2' loaded successfully.
+2024-11-26 18:51:24,758 - inference_log - INFO - Using alternative configuration file: /workspaces/Chatbot-Restaurant/configs/config.yaml
+2024-11-26 18:51:24,760 - inference_log - INFO - Successfully loaded configuration from YAML file.
+2024-11-26 18:51:24,760 - inference_log - INFO - Configuration loaded successfully.
+2024-11-26 18:51:24,760 - inference_log - INFO - Project configuration loaded successfully.
+2024-11-26 18:51:24,761 - inference_log - INFO - Database configuration loaded successfully.
+2024-11-26 18:51:24,761 - inference_log - INFO - Retrieval configuration loaded successfully.
+2024-11-26 18:51:24,761 - inference_log - INFO - Generative model configuration loaded successfully.
+2024-11-26 18:51:24,761 - inference_log - INFO - API configuration loaded successfully.
+2024-11-26 18:51:24,761 - inference_log - INFO - Connecting to the SQLite database at /workspaces/Chatbot-Restaurant/database/restaurant.db...
+2024-11-26 18:51:24,761 - inference_log - INFO - Executing query: SELECT * FROM faqs;
+2024-11-26 18:51:24,763 - inference_log - INFO - Query executed successfully and database connection closed.
+2024-11-26 18:51:24,763 - inference_log - INFO - Data ingested successfully from /workspaces/Chatbot-Restaurant/database/restaurant.db with query: SELECT * FROM faqs;...
+2024-11-26 18:51:24,763 - inference_log - INFO - Connecting to the SQLite database at /workspaces/Chatbot-Restaurant/database/restaurant.db...
+2024-11-26 18:51:24,763 - inference_log - INFO - Executing query: SELECT * FROM menu_items;
+2024-11-26 18:51:24,768 - inference_log - INFO - Query executed successfully and database connection closed.
+2024-11-26 18:51:24,768 - inference_log - INFO - Data ingested successfully from /workspaces/Chatbot-Restaurant/database/restaurant.db with query: SELECT * FROM menu_items;...
+2024-11-26 18:51:24,771 - inference_log - INFO - Starting Combining Columns
+2024-11-26 18:51:24,771 - inference_log - INFO - Verified Types Columns
+2024-11-26 18:51:24,771 - inference_log - INFO - Verified Types Data
+2024-11-26 18:51:24,773 - inference_log - INFO - Successfully Combined Columns
+2024-11-26 18:51:24,774 - inference_log - INFO - Starting Combining Columns
+2024-11-26 18:51:24,774 - inference_log - INFO - Verified Types Columns
+2024-11-26 18:51:24,774 - inference_log - INFO - Verified Types Data
+2024-11-26 18:51:24,781 - inference_log - INFO - Successfully Combined Columns
+2024-11-26 18:51:24,781 - inference_log - INFO - Starting embedding for column: combined
+2024-11-26 18:51:26,937 - inference_log - INFO - Successfully generated embeddings for column: combined
+2024-11-26 18:51:26,938 - inference_log - INFO - Successfully converted embeddings to a NumPy array.
+2024-11-26 18:51:26,938 - inference_log - INFO - Starting embedding for column: combined
+2024-11-26 18:51:51,812 - inference_log - INFO - Successfully generated embeddings for column: combined
+2024-11-26 18:51:51,814 - inference_log - INFO - Successfully converted embeddings to a NumPy array.
+2024-11-26 18:51:51,814 - inference_log - INFO - Starting FAISS index creation. Embedding array shape: (111, 384)
+2024-11-26 18:51:51,815 - inference_log - INFO - FAISS index created successfully.
+2024-11-26 18:51:51,815 - inference_log - INFO - Embeddings added to the FAISS index successfully.
+2024-11-26 18:51:51,815 - inference_log - INFO - FAISS index creation completed successfully.
+2024-11-26 18:51:51,816 - inference_log - INFO - Starting FAISS index creation. Embedding array shape: (944, 384)
+2024-11-26 18:51:51,816 - inference_log - INFO - FAISS index created successfully.
+2024-11-26 18:51:51,817 - inference_log - INFO - Embeddings added to the FAISS index successfully.
+2024-11-26 18:51:51,818 - inference_log - INFO - FAISS index creation completed successfully.
+2024-11-26 18:58:44,875 - inference_log - INFO - Starting retrieval process.
+2024-11-26 18:58:44,892 - inference_log - INFO - Query encoded successfully: What is You name?
+2024-11-26 18:58:44,894 - inference_log - INFO - Top 10 results retrieved from index_1.
+2024-11-26 18:58:44,896 - inference_log - INFO - Top 10 results retrieved from index_2.
+2024-11-26 18:58:44,896 - inference_log - INFO - Retrieval process completed successfully.
+2024-11-26 18:58:44,896 - inference_log - INFO - Generating context for the model.
+2024-11-26 18:58:44,897 - inference_log - INFO - Context generated successfully.
+2024-11-26 18:58:48,353 - inference_log - INFO - Response generated successfully.
+2024-11-26 18:59:40,125 - inference_log - INFO - Starting retrieval process.
+2024-11-26 18:59:40,146 - inference_log - INFO - Query encoded successfully: What is You name?
+2024-11-26 18:59:40,149 - inference_log - INFO - Top 10 results retrieved from index_1.
+2024-11-26 18:59:40,151 - inference_log - INFO - Top 10 results retrieved from index_2.
+2024-11-26 18:59:40,151 - inference_log - INFO - Retrieval process completed successfully.
+2024-11-26 18:59:40,152 - inference_log - INFO - Generating context for the model.
+2024-11-26 18:59:40,153 - inference_log - INFO - Context generated successfully.
+2024-11-26 18:59:42,894 - inference_log - INFO - Response generated successfully.
+2024-11-26 19:00:49,978 - inference_log - INFO - Starting retrieval process.
+2024-11-26 19:00:49,994 - inference_log - INFO - Query encoded successfully: What is You name?
+2024-11-26 19:00:49,996 - inference_log - INFO - Top 10 results retrieved from index_1.
+2024-11-26 19:00:49,998 - inference_log - INFO - Top 10 results retrieved from index_2.
+2024-11-26 19:00:49,998 - inference_log - INFO - Retrieval process completed successfully.
+2024-11-26 19:00:49,999 - inference_log - INFO - Generating context for the model.
+2024-11-26 19:00:49,999 - inference_log - INFO - Context generated successfully.
+2024-11-26 19:00:53,316 - inference_log - INFO - Response generated successfully.
+2024-11-26 19:01:57,000 - inference_log - INFO - Starting retrieval process.
+2024-11-26 19:01:57,015 - inference_log - INFO - Query encoded successfully: tell me more about your self?
+2024-11-26 19:01:57,017 - inference_log - INFO - Top 10 results retrieved from index_1.
+2024-11-26 19:01:57,018 - inference_log - INFO - Top 10 results retrieved from index_2.
+2024-11-26 19:01:57,019 - inference_log - INFO - Retrieval process completed successfully.
+2024-11-26 19:01:57,019 - inference_log - INFO - Generating context for the model.
+2024-11-26 19:01:57,020 - inference_log - INFO - Context generated successfully.
+2024-11-26 19:02:00,228 - inference_log - INFO - Response generated successfully.
+2024-11-27 11:02:22,432 - inference_log - INFO - Loading FLAN-T5 model...
+2024-11-27 11:02:23,639 - inference_log - INFO - Successfully loaded the FLAN-T5 model.
+2024-11-27 11:02:23,639 - inference_log - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2024-11-27 11:02:24,859 - inference_log - INFO - Successfully loaded the SentenceTransformer model.
+2024-11-27 11:02:24,859 - inference_log - INFO - SentenceTransformer model 'all-MiniLM-L6-v2' loaded successfully.
+2024-11-27 11:02:24,859 - inference_log - INFO - Using alternative configuration file: /workspaces/Chatbot-Restaurant/configs/config.yaml
+2024-11-27 11:02:24,864 - inference_log - INFO - Successfully loaded configuration from YAML file.
+2024-11-27 11:02:24,864 - inference_log - INFO - Configuration loaded successfully.
+2024-11-27 11:02:24,864 - inference_log - INFO - Project configuration loaded successfully.
+2024-11-27 11:02:24,864 - inference_log - INFO - Database configuration loaded successfully.
+2024-11-27 11:02:24,865 - inference_log - INFO - Retrieval configuration loaded successfully.
+2024-11-27 11:02:24,865 - inference_log - INFO - Generative model configuration loaded successfully.
+2024-11-27 11:02:24,865 - inference_log - INFO - API configuration loaded successfully.
+2024-11-27 11:02:24,866 - inference_log - INFO - Connecting to the SQLite database at /workspaces/Chatbot-Restaurant/database/restaurant.db...
+2024-11-27 11:02:24,866 - inference_log - INFO - Executing query: SELECT * FROM faqs;
+2024-11-27 11:02:24,868 - inference_log - INFO - Query executed successfully and database connection closed.
+2024-11-27 11:02:24,868 - inference_log - INFO - Data ingested successfully from /workspaces/Chatbot-Restaurant/database/restaurant.db with query: SELECT * FROM faqs;...
+2024-11-27 11:02:24,868 - inference_log - INFO - Connecting to the SQLite database at /workspaces/Chatbot-Restaurant/database/restaurant.db...
+2024-11-27 11:02:24,869 - inference_log - INFO - Executing query: SELECT * FROM menu_items;
+2024-11-27 11:02:24,875 - inference_log - INFO - Query executed successfully and database connection closed.
+2024-11-27 11:02:24,875 - inference_log - INFO - Data ingested successfully from /workspaces/Chatbot-Restaurant/database/restaurant.db with query: SELECT * FROM menu_items;...
+2024-11-27 11:02:24,878 - inference_log - INFO - Starting Combining Columns
+2024-11-27 11:02:24,878 - inference_log - INFO - Verified Types Columns
+2024-11-27 11:02:24,879 - inference_log - INFO - Verified Types Data
+2024-11-27 11:02:24,882 - inference_log - INFO - Successfully Combined Columns
+2024-11-27 11:02:24,883 - inference_log - INFO - Starting Combining Columns
+2024-11-27 11:02:24,883 - inference_log - INFO - Verified Types Columns
+2024-11-27 11:02:24,883 - inference_log - INFO - Verified Types Data
+2024-11-27 11:02:24,895 - inference_log - INFO - Successfully Combined Columns
+2024-11-27 11:02:24,896 - inference_log - INFO - Starting embedding for column: combined
+2024-11-27 11:02:26,797 - inference_log - INFO - Successfully generated embeddings for column: combined
+2024-11-27 11:02:26,798 - inference_log - INFO - Successfully converted embeddings to a NumPy array.
+2024-11-27 11:02:26,799 - inference_log - INFO - Starting embedding for column: combined
+2024-11-27 11:02:51,480 - inference_log - INFO - Successfully generated embeddings for column: combined
+2024-11-27 11:02:51,482 - inference_log - INFO - Successfully converted embeddings to a NumPy array.
+2024-11-27 11:02:51,482 - inference_log - INFO - Starting FAISS index creation. Embedding array shape: (111, 384)
+2024-11-27 11:02:51,482 - inference_log - INFO - FAISS index created successfully.
+2024-11-27 11:02:51,482 - inference_log - INFO - Embeddings added to the FAISS index successfully.
+2024-11-27 11:02:51,483 - inference_log - INFO - FAISS index creation completed successfully.
+2024-11-27 11:02:51,483 - inference_log - INFO - Starting FAISS index creation. Embedding array shape: (944, 384)
+2024-11-27 11:02:51,483 - inference_log - INFO - FAISS index created successfully.
+2024-11-27 11:02:51,483 - inference_log - INFO - Embeddings added to the FAISS index successfully.
+2024-11-27 11:02:51,483 - inference_log - INFO - FAISS index creation completed successfully.
+2024-11-27 11:03:37,624 - inference_log - INFO - Starting retrieval process.
+2024-11-27 11:03:37,644 - inference_log - INFO - Query encoded successfully: hello what is your name?
+2024-11-27 11:03:37,646 - inference_log - INFO - Top 10 results retrieved from index_1.
+2024-11-27 11:03:37,648 - inference_log - INFO - Top 10 results retrieved from index_2.
+2024-11-27 11:03:37,648 - inference_log - INFO - Retrieval process completed successfully.
+2024-11-27 11:03:37,648 - inference_log - INFO - Generating context for the model.
+2024-11-27 11:03:37,648 - inference_log - INFO - Context generated successfully.
+2024-11-27 11:03:41,537 - inference_log - INFO - Response generated successfully.
+2024-11-27 11:03:41,539 - inference_log - INFO - Starting retrieval process.
+2024-11-27 11:03:41,552 - inference_log - INFO - Query encoded successfully: hello what is your name?
+2024-11-27 11:03:41,553 - inference_log - INFO - Top 10 results retrieved from index_1.
+2024-11-27 11:03:41,554 - inference_log - INFO - Top 10 results retrieved from index_2.
+2024-11-27 11:03:41,555 - inference_log - INFO - Retrieval process completed successfully.
+2024-11-27 11:03:41,555 - inference_log - INFO - Generating context for the model.
+2024-11-27 11:03:41,555 - inference_log - INFO - Context generated successfully.
+2024-11-27 11:03:44,210 - inference_log - INFO - Response generated successfully.
+2024-11-27 11:04:42,472 - inference_log - INFO - Starting retrieval process.
+2024-11-27 11:04:42,494 - inference_log - INFO - Query encoded successfully: Me friand nasser have graduation project for planets?
+2024-11-27 11:04:42,495 - inference_log - INFO - Top 10 results retrieved from index_1.
+2024-11-27 11:04:42,497 - inference_log - INFO - Top 10 results retrieved from index_2.
+2024-11-27 11:04:42,497 - inference_log - INFO - Retrieval process completed successfully.
+2024-11-27 11:04:42,497 - inference_log - INFO - Generating context for the model.
+2024-11-27 11:04:42,498 - inference_log - INFO - Context generated successfully.
+2024-11-27 11:04:46,373 - inference_log - INFO - Response generated successfully.
+2024-11-27 11:04:46,375 - inference_log - INFO - Starting retrieval process.
+2024-11-27 11:04:46,391 - inference_log - INFO - Query encoded successfully: Me friand nasser have graduation project for planets?
+2024-11-27 11:04:46,393 - inference_log - INFO - Top 10 results retrieved from index_1.
+2024-11-27 11:04:46,394 - inference_log - INFO - Top 10 results retrieved from index_2.
+2024-11-27 11:04:46,395 - inference_log - INFO - Retrieval process completed successfully.
+2024-11-27 11:04:46,395 - inference_log - INFO - Generating context for the model.
+2024-11-27 11:04:46,395 - inference_log - INFO - Context generated successfully.
+2024-11-27 11:04:50,422 - inference_log - INFO - Response generated successfully.
+2024-11-27 11:32:27,158 - inference_log - INFO - Starting retrieval process.
+2024-11-27 11:32:27,173 - inference_log - INFO - Query encoded successfully: What is You name?
+2024-11-27 11:32:27,175 - inference_log - INFO - Top 10 results retrieved from index_1.
+2024-11-27 11:32:27,177 - inference_log - INFO - Top 10 results retrieved from index_2.
+2024-11-27 11:32:27,177 - inference_log - INFO - Retrieval process completed successfully.
+2024-11-27 11:32:27,177 - inference_log - INFO - Generating context for the model.
+2024-11-27 11:32:27,178 - inference_log - INFO - Context generated successfully.
+2024-11-27 11:32:30,321 - inference_log - INFO - Response generated successfully.
+2024-11-27 11:34:43,134 - inference_log - INFO - Starting retrieval process.
+2024-11-27 11:34:43,147 - inference_log - INFO - Query encoded successfully: Hou u can help me?
+2024-11-27 11:34:43,148 - inference_log - INFO - Top 10 results retrieved from index_1.
+2024-11-27 11:34:43,149 - inference_log - INFO - Top 10 results retrieved from index_2.
+2024-11-27 11:34:43,149 - inference_log - INFO - Retrieval process completed successfully.
+2024-11-27 11:34:43,149 - inference_log - INFO - Generating context for the model.
+2024-11-27 11:34:43,149 - inference_log - INFO - Context generated successfully.
+2024-11-27 11:34:46,939 - inference_log - INFO - Response generated successfully.
+2024-11-27 11:35:01,739 - inference_log - INFO - Starting retrieval process.
+2024-11-27 11:35:01,766 - inference_log - INFO - Query encoded successfully: What is Kabsa?
+2024-11-27 11:35:01,767 - inference_log - INFO - Top 10 results retrieved from index_1.
+2024-11-27 11:35:01,778 - inference_log - INFO - Top 10 results retrieved from index_2.
+2024-11-27 11:35:01,779 - inference_log - INFO - Retrieval process completed successfully.
+2024-11-27 11:35:01,779 - inference_log - INFO - Generating context for the model.
+2024-11-27 11:35:01,779 - inference_log - INFO - Context generated successfully.
+2024-11-27 11:35:12,913 - inference_log - INFO - Response generated successfully.
