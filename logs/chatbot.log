@@ -46,3 +46,9 @@
 2024-11-27 11:35:12,914 - chatbot_log - INFO - User query: What is Kabsa?
 2024-11-27 11:35:12,914 - chatbot_log - INFO - Chatbot response: A traditional mixed rice dish with meat and vegetables. (Ingredients: Basmati rice, chicken or lamb, vegetables (carrots, peas, onions), spices (cinnamon, cloves, cardamom), ghee or oil, Allergens: Gluten, Dairy (if ghee is used))
 2024-11-27 11:35:12,914 - chatbot_log - INFO - Time taken: 11.17 seconds
+2024-12-01 19:55:26,843 - chatbot_log - INFO - User query: What is You name?
+2024-12-01 19:55:26,843 - chatbot_log - INFO - Chatbot response: AlRashid
+2024-12-01 19:55:26,843 - chatbot_log - INFO - Time taken: 6.47 seconds
+2024-12-01 20:04:37,357 - chatbot_log - INFO - User query: What is Kabsa?
+2024-12-01 20:04:37,358 - chatbot_log - INFO - Chatbot response: A traditional mixed rice dish with meat and vegetables. (Ingredients: Basmati rice, chicken or lamb, vegetables (carrots, peas, onions), spices (cinnamon, cloves, cardamom), ghee or oil, Allergens: Gluten, Dairy (if ghee is used))
+2024-12-01 20:04:37,358 - chatbot_log - INFO - Time taken: 9.36 seconds

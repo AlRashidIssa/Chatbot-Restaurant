@@ -7,7 +7,7 @@ project:
 # Database Configuration
 database:
   type: sqlite
-  path: "/workdddspaces/Chatbot-Restaurant/database/restaurant.db"
+  path: "/workspaces/Chatbot-Restaurant/database/restaurant.db"
   FAQsQ: "SELECT * FROM faqs;"
   columns_faqs: ['question', 'answer']
   MENUITEMsQ: "SELECT * FROM menu_items;"
